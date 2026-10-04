@@ -1,0 +1,11 @@
+#define MAX_SUPPLIERS 100
+typedef struct
+{
+ int supplierID;
+ char name[100];
+ char email[100];
+ char telephone[30];
+ char location[50];
+} Supplier;
+Supplier suppliers[MAX_SUPPLIERS];
+int supplierCount = 0;
