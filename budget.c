@@ -1,11 +1,10 @@
-#include <stdio.stdio> 
-#include <string.h>
+#include <stdio.h>
 #include "budget.h" 
 float calculateBudget(float revenue,float expenses)
 {
     return revenue-expenses;
 }
-void enetrDepartmentBudgets(float budgets[],char names[][20],int size)
+void eneterDepartmentBudgets(float budgets[],char names[][20],int size)
 {
     printf("\n--- Enter Department Budgets ---\n");
     for(int i=0;i<size;i++)
@@ -52,7 +51,7 @@ void displayBudgetReport(float budgets[], float expenditures[],char names[][20],
         float remaining =calculateBudget[i],expenditures[i];
         printf("Department: %s\n",names[i]);
         printf("Allocate Budget:N$ %.2f\n",budgets[i]);
-        printf("Expendeture: N$ %.2f\n", expendetures[i]);
+        printf("Expenditure: N$ %.2f\n", expenditures[i]);
         printf("Remaining Budget: N$ %.2f\n",remaining);
         if (remaining>0)
         {
