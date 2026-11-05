@@ -2,7 +2,6 @@
 #include <string.h>
 #include "suppliers.h"
 
-// Global variables for supplier data
 char supplierIds[MAX_SUPPLIERS][MAX_STR_LEN];
 char supplierNames[MAX_SUPPLIERS][MAX_STR_LEN];
 char supplierEmails[MAX_SUPPLIERS][MAX_STR_LEN];
@@ -19,7 +18,6 @@ void addSupplier() {
     printf("Enter Supplier ID: ");
     scanf("%s", supplierIds[supplierCount]);
 
-    // Validation for empty or invalid ID
     if (strlen(supplierIds[supplierCount]) == 0) {
         printf("Invalid ID. Cannot be empty.\n");
         return;
